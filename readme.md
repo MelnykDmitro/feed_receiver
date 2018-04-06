@@ -1,6 +1,7 @@
 # Install
 
 - **composer install**
+- Specify THE_MOVIE_DB_API_KEY in .env
 
 # Use
 
