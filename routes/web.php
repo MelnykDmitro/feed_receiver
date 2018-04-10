@@ -12,4 +12,4 @@
 */
 
 $router->get('/', 'FeedController');
-$router->get('/{input?}', 'FeedController');
+$router->get('/{input}', 'FeedController');

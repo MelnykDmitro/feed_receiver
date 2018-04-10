@@ -27,6 +27,6 @@ class FeedOutputCommand extends Command
 
         $receiver = FeedReceiverCreator::getInstance($input);
 
-        $this->line($receiver->getOutput());
+        $this->line(json_encode($receiver->getData()));
     }
 }

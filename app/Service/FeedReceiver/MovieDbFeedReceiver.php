@@ -21,7 +21,7 @@ class MovieDbFeedReceiver implements FeedReceiverInterface
         ]);
     }
 
-    public function getOutput(): string
+    public function getData(): array
     {
         $response = $this->httpClient->get('movie/popular');
 
@@ -30,7 +30,7 @@ class MovieDbFeedReceiver implements FeedReceiverInterface
         $genreList = $this->getGenreList();
         $output = $this->transformResponse($responseContent, $genreList);
 
-        return json_encode($output);
+        return $output;
     }
 
     private function getGenreList(): array
