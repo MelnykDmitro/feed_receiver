@@ -23,7 +23,7 @@ class FeedOutputCommand extends Command
 
     public function handle()
     {
-        $input = $this->ask('Specify input (default is The Movie DB)', FeedReceiverCreator::RECEIVER_MOVIE_DB);
+        $input = $this->ask('Specify input (movie_db or vimeo)', FeedReceiverCreator::RECEIVER_MOVIE_DB);
 
         $receiver = FeedReceiverCreator::getInstance($input);
 

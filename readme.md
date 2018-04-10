@@ -7,7 +7,7 @@
 
 - Http server and root route to get ouput
 - - Optional can be specified input by /{input_name}
-- Run command **feed:output**
+- Run command **php artisan feed:output**
 
 ###Inputs
 
